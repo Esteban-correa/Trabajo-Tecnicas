@@ -11,17 +11,17 @@ import java.io.InputStreamReader;
 
 /**
  *
- * @author  Diana  Margot  López Herrera
+ * @author  Diana  Margot  LÃ³pez Herrera
  * Agosto  25 de  2015
  * Dado  un numero determinado  de   personas  halle  el promedio de la edad
  * Reuso del  metodo  Leer 
  */
-public class Ejerciciosencillo1 {
+public class ONi-chan {
 
     /**
      * @param args the command line arguments
      */
-    //método  que  lee  datos desde  el teclado,  y devuelve  solo enteros.
+    //mÃ©todo  que  lee  datos desde  el teclado,  y devuelve  solo enteros.
     static int  leer(String mensaje) throws IOException{
         String ingreso;
         int numero;        
@@ -34,13 +34,13 @@ public class Ejerciciosencillo1 {
         return numero;
     }
     
-    //método que  calcula el promedio, dada la suma y  la  cantidad de datos
+    //mÃ©todo que  calcula el promedio, dada la suma y  la  cantidad de datos
     static  double calcularPromedio(double suma, int cantidad){
         double  resultado;        
         resultado =  suma/cantidad;
         return resultado;
     }
-      //método que  suma dos numeros double
+      //mÃ©todo que  suma dos numeros double
     static  double sumar(double numero1, double numero2){
         double  resultado;        
         resultado =  numero1+numero2;
@@ -56,9 +56,9 @@ public class Ejerciciosencillo1 {
         double promedio;
         double  dineroRecaudado =0;
         //double nuevonumero;
-        System.out.println("¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦");
+        System.out.println("Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦");
         System.out.println("Bienvenidos a la fiesta de los que sobran ");
-        System.out.println("¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦");
+        System.out.println("Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦");
         numeroinvitados = leer("Ingrese la cantidad de invitados"); 
         System.out.println("La cantidad de invitados es = "+ numeroinvitados);
         //ciclo  que  lee  la  edad de  cada  uno de los  invitados  y la  suma
@@ -69,16 +69,16 @@ public class Ejerciciosencillo1 {
             dinero=leer("El valor del  regalo es: ");
             dineroRecaudado = sumar(dineroRecaudado,dinero);
         }
-        //invocación al método que calcula la edad
+        //invocaciÃ³n al mÃ©todo que calcula la edad
         promedio = calcularPromedio(suma, numeroinvitados);
         
         System.out.println("La edad promedio de los invitados es = "+ promedio); 
         System.out.println("");
         System.out.println("el dinero recaudado es = "+ dineroRecaudado); 
         System.out.println("");
-        System.out.println("¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦");
-        System.out.println("Te  espero  en  una próxima ocasión ");
-        System.out.println("¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦");
+        System.out.println("Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦");
+        System.out.println("Te  espero  en  una prÃ³xima ocasiÃ³n ");
+        System.out.println("Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦");
     }
     
 }
